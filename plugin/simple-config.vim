@@ -1,6 +1,6 @@
 " ------------------------------
-" @author fanjiapeng@360.cn
-" @uptime 2016-08-15
+" @Author fanjiapeng@126.com
+" @Uptime 2020-08-20
 " ------------------------------
 
 " 设置代码高亮
@@ -19,15 +19,15 @@ set history=50
 " 搜索忽略大小写
 set ignorecase
 
-" 自动TAB,一个tab就真正成为4个空格了，而不仅仅是4个空格的缩进距离
+" 自动TAB, 一个tab就真正成为4个空格了, 而不仅仅是4个空格的缩进距离
 set expandtab
 
 " 自动缩进、自动对齐、tab为4
-" 第一行设置tab键为4个空格，第二行设置当行之间交错时使用4个空格
+" 第一行设置tab键为4个空格, 第二行设置当行之间交错时使用4个空格
 set tabstop=4
 set shiftwidth=4
 
-" Softtabstop表示在编辑模式的时候按退格键的时候退回缩进的长度,当使用expandtab时特别有用。
+" Softtabstop表示在编辑模式的时候按退格键的时候退回缩进的长度, 当使用expandtab时特别有用
 set softtabstop=4
 
 " 设置自动缩进
@@ -52,3 +52,40 @@ set wildmenu
 if version > 603
     set helplang=cn
 end
+
+" 平时光标不闪, 而在插入模式时闪动
+set guicursor+=n-v-c:blinkon0
+
+" 保存文件格式
+set fileformats=unix,dos,mac
+
+" 启用代码标记折叠, 2个zf快速按键
+set fdm=marker
+
+" 高亮显示匹配的括号
+set showmatch
+
+" 匹配括号高亮的时间(单位是十分之一秒)
+set matchtime=1
+
+" 置粘贴模式, 这样粘贴过来的程序代码就不会错位了, 如果开启, 这自动缩进功能没了
+set paste
+
+" 视图模式选中自动复制
+vmap <C-c> "+y
+
+" 模式行关闭
+set nomodeline
+
+" 支持鼠标操作
+set mouse=a
+
+" 关闭VI兼容模式
+set nocompatible
+
+" 取消备份
+set nobackup
+set nowritebackup
+
+" 不产生.swp文件，建议关闭
+set noswapfile
