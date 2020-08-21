@@ -50,6 +50,16 @@ call vundle#end()
 ```
 保存 `~/.vimrc` ，运行命令 `:PluginInstall` 完成安装。
 
+## 配色方案
+
+自带了 3 种经典 Vim 配色方案，需要在 `~/.vimrc` 里设置
+
+| .vimrc Set | GitHub
+| --- | --- | 
+| colorscheme=gruvbox  | https://github.com/morhetz/gruvbox  |
+| colorscheme=molokai  | https://github.com/fcevado/molokai_dark  |
+| colorscheme=wombat256mod  | https://github.com/vim-scripts/wombat256.vim  |
+
 ## Contributors
 
 *Thank you!*

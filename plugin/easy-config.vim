@@ -3,12 +3,16 @@
 " @Uptime 2020-08-20
 " ------------------------------
 
-" 设置代码高亮
-syntax on
-
 " 载入文件类型插件
 " 为特定文件类型载入相关缩进文件
-filetype plugin indent on
+if has('autocmd')
+  filetype plugin indent on
+endif
+
+" 设置代码高亮
+if has('syntax') && !exists('g:syntax_on')
+    syntax enable
+endif
 
 " 自动行号
 set number
@@ -95,6 +99,3 @@ set background=dark
 
 " 开启256色支持, 默认8色
 set t_Co=256
-
-" 配色方案(default)
-colorscheme=wombat256mod
