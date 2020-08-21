@@ -54,11 +54,11 @@ call vundle#end()
 
 vim-easy-config 自带了 3 种经典 Vim 配色方案，默认选择配色 `wombat256mod`
 
-| .vimrc Set | GitHub
+| colorscheme | GitHub |
 | --- | --- | 
-| colorscheme=gruvbox  | https://github.com/morhetz/gruvbox  |
-| colorscheme=molokai  | https://github.com/fcevado/molokai_dark  |
-| colorscheme=wombat256mod  | https://github.com/vim-scripts/wombat256.vim  |
+| gruvbox  | https://github.com/morhetz/gruvbox  |
+| molokai  | https://github.com/fcevado/molokai_dark  |
+| wombat256mod  | https://github.com/vim-scripts/wombat256.vim  |
 
 ## Contributors
 
