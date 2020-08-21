@@ -1,6 +1,6 @@
 " ------------------------------
 " @Author fanjiapeng@126.com
-" @Uptime 2020-08-20
+" @Uptime 2020-08-21
 " ------------------------------
 
 " 载入文件类型插件
@@ -14,11 +14,38 @@ if has('syntax') && !exists('g:syntax_on')
     syntax enable
 endif
 
+" 配置多语言环境 & 推荐设置 utf-8 编码
+if has("multi_byte")
+    set encoding=utf-8
+    set termencoding=utf-8
+    set formatoptions+=mM
+    set fencs=utf-8,gbk,cp936
+
+    if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
+        set ambiwidth=double
+    endif
+
+    if has("win32")
+        source $VIMRUNTIME/delmenu.vim
+        source $VIMRUNTIME/menu.vim
+        language messages zh_CN.utf-8
+    endif
+else
+    echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
+endif
+
 " 自动行号
 set number
 
-" 保留历史记录50条
-set history=50
+" 保留历史记录100条
+if &history < 100
+    set history=100
+endif
+
+" 保留最大的tab数量
+if &tabpagemax < 50
+    set tabpagemax=50
+endif
 
 " 搜索忽略大小写
 set ignorecase
@@ -95,7 +122,20 @@ set nowritebackup
 set noswapfile
 
 " 配置主题整体的色调
-set background=dark
+if !&background
+    set background=dark
+endif
 
 " 开启256色支持, 默认8色
 set t_Co=256
+
+" 选择配色
+colorscheme wombat256mod
+
+" 文件被修改时, 自动载入
+set autoread
+
+" 避免折行后某一行不见
+set display=lastline
+
+" vim:set ts=4 sw=4 noet:
