@@ -4,9 +4,9 @@
 * 如果您正在到处寻找一个通用性强、实战性强的 Vim 配置。
 * 如果你想让 vimrc 基础配置变得超级简单。
 
-## 安装
+## 三种安装方式
 
-#### 手动安装
+#### 1、手动安装
 
 ```bash
 $ mkdir -p ~/.vim/plugin
@@ -14,7 +14,7 @@ $ cd ~/.vim/plugin
 $ git clone https://github.com/yulonghu/vim-easy-config.git
 ```
 
-#### vim-plug
+#### 2、vim-plug
 
 安装 vim-plug 插件管理器
 
@@ -33,7 +33,7 @@ call plug#end()
 
 保存 `~/.vimrc` ，运行命令 `:PlugInstall` 完成安装。
 
-#### vim-vundle
+#### 3、vim-vundle
 
 安装 vundle 插件管理器
 
