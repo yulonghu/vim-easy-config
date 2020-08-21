@@ -31,7 +31,7 @@ Plug 'yulonghu/vim-easy-config'
 call plug#end()
 ```
 
-保存 `~/.vimrc` ，运行命令 `:PlugInstall` 完成安装。
+保存 `~/.vimrc` or `:source ~/.vimrc` ，运行命令 `:PlugInstall` 完成安装。
 
 #### 3、vim-vundle
 
@@ -48,7 +48,7 @@ call vundle#begin()
 Plugin 'yulonghu/vim-easy-config'
 call vundle#end()
 ```
-保存 `~/.vimrc` ，运行命令 `:PluginInstall` 完成安装。
+保存 `~/.vimrc` or `:source ~/.vimrc` ，运行命令 `:PluginInstall` 完成安装。
 
 ## 配色方案
 
