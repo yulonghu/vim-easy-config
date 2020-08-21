@@ -89,3 +89,12 @@ set nowritebackup
 
 " 不产生.swp文件，建议关闭
 set noswapfile
+
+" 配置主题整体的色调
+set background=dark
+
+" 开启256色支持, 默认8色
+set t_Co=256
+
+" 配色方案(default)
+colorscheme=wombat256mod
