@@ -52,7 +52,7 @@ call vundle#end()
 
 ## 配色方案
 
-自带了 3 种经典 Vim 配色方案，需要在 `~/.vimrc` 里设置
+vim-easy-config 自带了 3 种经典 Vim 配色方案，默认选择配色 `wombat256mod`
 
 | .vimrc Set | GitHub
 | --- | --- | 
