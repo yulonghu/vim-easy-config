@@ -100,7 +100,8 @@ set showmatch
 set matchtime=1
 
 " 置粘贴模式, 这样粘贴过来的程序代码就不会错位了, 如果开启, 这自动缩进功能没了
-set paste
+"set paste
+set nopaste
 
 " 视图模式选中自动复制
 vmap <C-c> "+y
