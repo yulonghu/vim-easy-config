@@ -54,6 +54,8 @@ call vundle#end()
 
 vim-easy-config 自带了 3 种经典 Vim 配色方案，默认选择配色 `wombat256mod`
 
+注意: 如果需要在文件 `.vimrc` 里自定义 `colorscheme`, 请先关闭 vim-easy-config 默认配色
+
 | colorscheme | GitHub |
 | --- | --- | 
 | gruvbox  | https://github.com/morhetz/gruvbox  |
