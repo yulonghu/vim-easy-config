@@ -112,8 +112,11 @@ set nomodeline
 " 支持鼠标操作
 set mouse=a
 
-" 关闭VI兼容模式
+" 关闭VI兼容模式, 避免历史版本的一些BUG和局限型问题
 set nocompatible
+
+" 启用backspace
+set backspace=indent,eol,start
 
 " 取消备份
 set nobackup
