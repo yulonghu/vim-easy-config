@@ -4,7 +4,7 @@
 
 
 | 插件名称 | 简介 | GitHub |
-| --- | --- | 
+| --- | --- | --- |
 | NERDTree | 目录管理 | https://github.com/preservim/nerdtree |
 | Tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar |
 
