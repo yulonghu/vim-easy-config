@@ -37,3 +37,21 @@ let NERDTreeDirArrows=1
 ```bash
 nmap <F8> :TagbarToggle<CR>
 ```
+
+### YCM
+
+安装所有语言的支持。包括有 C-family、C#、Python、Go、JavaScript and TypeScript、Rust、Java等
+
+```bash
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all
+```
+
+选择型安装 Go，Javascript 语言的支持
+
+```bash
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --go-completer
+python3 install.py --ts-completer
+```
+
