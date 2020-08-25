@@ -3,10 +3,10 @@
 [easy-config.vim](https://github.com/yulonghu/vim-easy-config/blob/master/README.md) | Vim IDE
 
 
-| 插件名称 | 插件路径 | 简介 | GitHub |
-| --- | --- | --- | --- |
-| NERDTree | preservim/nerdtree | 目录管理 | https://github.com/preservim/nerdtree |
-| Tagbar | majutsushi/tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar |
+| 插件名称 | 插件路径 | 简介 | GitHub | Vim Version |
+| --- | --- | --- | --- | --- |
+| NERDTree | preservim/nerdtree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
+| Tagbar | majutsushi/tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
 
 ## 推荐插件大全
 
@@ -29,6 +29,8 @@ let NERDTreeDirArrows=1
 ```
 
 ### Tagbar
+
+需要先安装 ctags `yum install ctags`
 
 ```bash
 nmap <F8> :TagbarToggle<CR>
