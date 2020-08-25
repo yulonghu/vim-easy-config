@@ -7,7 +7,7 @@
 | --- | --- | --- | --- | --- |
 | NERDTree | preservim/nerdtree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
 | Tagbar | majutsushi/tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
-| YouCompleteMe | ycm-core/YouCompleteMe | 代码自动补全 | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
+| YCM | ycm-core/YouCompleteMe | 代码自动补全 | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
 | ALE | dense-analysis/ale | 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
 
 ## 推荐插件大全
