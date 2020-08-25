@@ -1,5 +1,7 @@
 # easy-config.vim
 
+easy-config.vim | [Vim IDE](https://github.com/yulonghu/vim-easy-config/blob/master/README_IDE.md) 
+
 * 如果您是 Vim 新手，请毫不犹豫地安装它吧，它将是您的 Vim 起点。
 * 如果您正在到处寻找一个通用性强、实战性强的 Vim 配置。
 * 如果你想让 vimrc 基础配置变得超级简单。
