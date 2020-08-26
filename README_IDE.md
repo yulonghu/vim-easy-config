@@ -3,13 +3,13 @@
 [easy-config.vim](https://github.com/yulonghu/vim-easy-config/blob/master/README.md) | Vim IDE
 
 
-| 插件名称 | 插件路径 | 简介 | GitHub | Vim Version |
-| --- | --- | --- | --- | --- |
-| NERDTree | preservim/nerdtree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
-| Tagbar | majutsushi/tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
-| YCM | ycm-core/YouCompleteMe | 支持多种语言，代码自动补全 (缺点安装特别慢) | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
-| ALE | dense-analysis/ale | 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
-| phpcomplete | shawncplus/phpcomplete.vim | PHP语言 代码自动补全 | https://github.com/shawncplus/phpcomplete.vim | vim >= 7.3 |
+| 插件名称 | 简介 | GitHub | Vim Version |
+| --- | --- | --- | --- |
+| NERDTree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
+| Tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
+| YouCompleteMe | 支持多种语言，代码自动补全 (缺点安装特别慢) | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
+| ALE | 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
+| phpcomplete | PHP语言 代码自动补全 | https://github.com/shawncplus/phpcomplete.vim | vim >= 7.3 |
 
 ## 推荐插件大全
 
