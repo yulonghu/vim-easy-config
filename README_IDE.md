@@ -7,8 +7,9 @@
 | --- | --- | --- | --- | --- |
 | NERDTree | preservim/nerdtree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
 | Tagbar | majutsushi/tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
-| YCM | ycm-core/YouCompleteMe | 代码自动补全 | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
+| YCM | ycm-core/YouCompleteMe | 支持多种语言，代码自动补全 (缺点安装特别慢) | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
 | ALE | dense-analysis/ale | 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
+| phpcomplete | shawncplus/phpcomplete.vim | PHP语言 代码自动补全 | https://github.com/shawncplus/phpcomplete.vim | vim >= 7.3 |
 
 ## 推荐插件大全
 
@@ -42,6 +43,8 @@ nmap <F8> :TagbarToggle<CR>
 
 安装所有语言的支持。包括有 C-family、C#、Python、Go、JavaScript and TypeScript、Rust、Java等
 
+缺点: 安全过程特别慢
+
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all
@@ -53,5 +56,14 @@ python3 install.py --all
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --go-completer
 python3 install.py --ts-completer
+```
+
+### phpcomplete
+
+PHP 语言代码自动补全: phpcomplete、phpcd
+
+```bash
+set completeopt=longest,menu " 禁止在编辑器上方显示 help
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 ```
 
