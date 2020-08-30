@@ -8,8 +8,9 @@
 | NERDTree | 目录管理 | https://github.com/preservim/nerdtree | vim >= 7.3 |
 | Tagbar | 显示文件的类、函数、变量 | https://github.com/majutsushi/tagbar | vim >= 7.3 |
 | YouCompleteMe | 支持多种语言，代码自动补全 (缺点安装特别慢) | https://github.com/ycm-core/YouCompleteMe | vim >= 8.0 |
-| ALE | 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
+| ALE | 支持多种语言, 语法检测工具 | https://github.com/dense-analysis/ale | vim >= 8.0 |
 | phpcomplete | PHP语言 代码自动补全 | https://github.com/shawncplus/phpcomplete.vim | vim >= 7.3 |
+| vim-go | Go语言 开发插件 | https://github.com/fatih/vim-go | vim >= 8.0 |
 
 ## 推荐插件大全
 
@@ -65,5 +66,12 @@ PHP 语言代码自动补全: phpcomplete、phpcd
 ```bash
 set completeopt=longest,menu " 禁止在编辑器上方显示 help
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+```
+### vim-go
+
+vim-go 是 Vim 的 Go 语言开发插件。支持代码高亮、语法检查、代码提示、自动格式化代码等功能
+
+```bash
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 ```
 
