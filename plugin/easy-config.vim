@@ -142,4 +142,7 @@ set autoread
 " 避免折行后某一行不见
 set display=lastline
 
+" 设置 f2 代码提示快捷键(手动模式)
+imap <F2> <C-x><C-o>
+
 " vim:set ts=4 sw=4 noet:
