@@ -96,6 +96,9 @@ set fdm=marker
 " 高亮显示匹配的括号
 set showmatch
 
+" 高亮搜索
+set hlsearch
+
 " 匹配括号高亮的时间(单位是十分之一秒)
 set matchtime=1
 
