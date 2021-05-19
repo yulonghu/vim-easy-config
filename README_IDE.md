@@ -81,8 +81,10 @@ set updatetime=100
 
 " enable go 代码折叠
 let g:go_fmt_experimental = 1
+
 " enable goimports
 let g:go_imports_autosave = 1
+
 " enable highlight
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -91,5 +93,12 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
+
+" Golang Debug
+nmap <F3> :GoRun<CR>
+nmap <F4> :GoDebugStart<CR>
+
+let g:go_highlight_debug = 1
+let g:go_debug_breakpoint_sign_text = '>'
 ```
 
