@@ -74,9 +74,10 @@ vim-go 是 Vim 的 Go 语言开发插件。支持代码高亮、语法检查、�
 ```bash
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-" Enable GoInfo
+" 移动光标时自动显示提示信息
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_auto_type_info = 1
+" 100ms
 set updatetime=100
 
 " enable goimports
