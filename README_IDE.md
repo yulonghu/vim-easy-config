@@ -79,11 +79,15 @@ autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_auto_type_info = 1
 set updatetime=100
 
-" enable go 代码折叠
-let g:go_fmt_experimental = 1
-
 " enable goimports
 let g:go_imports_autosave = 1
+
+" goimports是 的替代品gofmt
+" 每当您保存文件时，goimports都会自动格式化并重写您的导入声明
+let g:go_fmt_command = "goimports"
+
+" enable go 代码折叠
+let g:go_fmt_experimental = 1
 
 " enable highlight
 let g:go_highlight_types = 1
@@ -94,7 +98,11 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
 
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_deadline = "5s"
+
 " Golang Debug
+nmap <F2> :GoTest<CR>
 nmap <F3> :GoRun<CR>
 nmap <F4> :GoDebugStart<CR>
 
