@@ -82,8 +82,8 @@ set updatetime=100
 " enable goimports
 let g:go_imports_autosave = 1
 
-" goimports是 的替代品gofmt
-" 每当您保存文件时，goimports都会自动格式化并重写您的导入声明
+" goimports 是 gofmt 的替代品
+" 每当您保存文件时，goimports 都会自动格式化并重写您的导入声明
 let g:go_fmt_command = "goimports"
 
 " enable go 代码折叠

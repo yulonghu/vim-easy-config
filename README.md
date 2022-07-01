@@ -18,7 +18,7 @@ $ git clone https://github.com/yulonghu/vim-easy-config.git
 
 #### 2、vim-plug
 
-安装 vim-plug 插件管理器
+安装 [vim-plug](https://github.com/junegunn/vim-plug) 插件管理器
 
 ```bash
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ 
@@ -34,10 +34,12 @@ call plug#end()
 ```
 
 保存 `~/.vimrc` or `:source ~/.vimrc` ，运行命令 `:PlugInstall` 完成安装。
+定期更新已安装的插件 `:PlugUpdate`。
+出现安装失败时，重试更新请按 `R`。安装成功后，查看本次更新内容请按 `D`。
 
 #### 3、vim-vundle
 
-安装 vundle 插件管理器
+安装 [vundle](https://github.com/VundleVim/Vundle.vim) 插件管理器
 
 ```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -51,6 +53,7 @@ Plugin 'yulonghu/vim-easy-config'
 call vundle#end()
 ```
 保存 `~/.vimrc` or `:source ~/.vimrc` ，运行命令 `:PluginInstall` 完成安装。
+定期更新已安装的插件 `:BundleUpdate`。
 
 ## 配色方案
 
