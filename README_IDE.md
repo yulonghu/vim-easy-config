@@ -106,6 +106,7 @@ let g:go_metalinter_deadline = "5s"
 nmap <F2> :GoTest<CR>
 nmap <F3> :GoRun<CR>
 nmap <F4> :GoDebugStart<CR>
+nmap <C-b> :GoReferrers<CR>
 
 let g:go_highlight_debug = 1
 let g:go_debug_breakpoint_sign_text = '>'
