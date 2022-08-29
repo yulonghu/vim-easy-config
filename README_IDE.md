@@ -77,6 +77,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " 移动光标时自动显示提示信息
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_auto_type_info = 1
+
 " 100ms
 set updatetime=100
 
@@ -102,13 +103,17 @@ let g:go_highlight_generate_tags = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_deadline = "5s"
 
-" Golang Debug
+let g:go_highlight_debug = 1
+let g:go_debug_breakpoint_sign_text = '>'
+
+" 快捷键配置
 nmap <F2> :GoTest<CR>
 nmap <F3> :GoRun<CR>
 nmap <F4> :GoDebugStart<CR>
 nmap <C-b> :GoReferrers<CR>
 
-let g:go_highlight_debug = 1
-let g:go_debug_breakpoint_sign_text = '>'
+nmap <F9> :TagbarToggle<CR>
+let g:tagbar_autopreview = 0 "1开启自动预览(随着光标在标签上的移动，vim顶部会出现一个实时的预览窗口)
+let g:tagbar_sort = 0 "关闭排序, 按标签本身在文件中的位置排序
 ```
 
